@@ -5,6 +5,7 @@
 //  Created by Bambang Tri Rahmat Doni on 06/02/24.
 //
 
+import Inject
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -18,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // `application:configurationForConnectingSceneSession` instead).
     guard let scene = (scene as? UIWindowScene) else { return }
 
-    let viewController = OnboardingViewController()
+    let viewController = Inject.ViewControllerHost(OnboardingViewController())
 
     let barAppearance = UINavigationBarAppearance()
     barAppearance.backgroundColor = .systemGray

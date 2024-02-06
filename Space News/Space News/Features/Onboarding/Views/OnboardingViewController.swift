@@ -34,6 +34,6 @@ final class OnboardingViewController: UIViewController {
   override func loadView() {
     super.loadView()
 
-    view.backgroundColor = .systemBlue
+    view.backgroundColor = .systemOrange
   }
 }
