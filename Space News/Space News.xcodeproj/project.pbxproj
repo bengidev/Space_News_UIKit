@@ -16,6 +16,7 @@
 		B633B1A82B7207FD00CC9322 /* Space_NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1A72B7207FD00CC9322 /* Space_NewsUITests.swift */; };
 		B633B1AA2B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1A92B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift */; };
 		B633B1BF2B720DA800CC9322 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1BE2B720DA800CC9322 /* OnboardingViewController.swift */; };
+		B633B1C62B72189000CC9322 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = B633B1C52B72189000CC9322 /* .swiftformat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		B633B1A72B7207FD00CC9322 /* Space_NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_NewsUITests.swift; sourceTree = "<group>"; };
 		B633B1A92B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B633B1BE2B720DA800CC9322 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B633B1C32B7212EE00CC9322 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B633B1C52B72189000CC9322 /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		B633B1772B7207F900CC9322 = {
 			isa = PBXGroup;
 			children = (
+				B633B1C52B72189000CC9322 /* .swiftformat */,
+				B633B1C32B7212EE00CC9322 /* .swiftlint.yml */,
 				B633B1822B7207F900CC9322 /* Space News */,
 				B633B19C2B7207FC00CC9322 /* Space NewsTests */,
 				B633B1A62B7207FC00CC9322 /* Space NewsUITests */,
@@ -217,6 +222,8 @@
 				B633B17C2B7207F900CC9322 /* Sources */,
 				B633B17D2B7207F900CC9322 /* Frameworks */,
 				B633B17E2B7207F900CC9322 /* Resources */,
+				B633B1C22B7210CB00CC9322 /* Swift Lint */,
+				B633B1C42B72183300CC9322 /* Swift Format */,
 			);
 			buildRules = (
 			);
@@ -313,6 +320,7 @@
 			files = (
 				B633B1932B7207FC00CC9322 /* LaunchScreen.storyboard in Resources */,
 				B633B1902B7207FC00CC9322 /* Assets.xcassets in Resources */,
+				B633B1C62B72189000CC9322 /* .swiftformat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +339,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B633B1C22B7210CB00CC9322 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B633B1C42B72183300CC9322 /* Swift Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftformat > /dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B633B17C2B7207F900CC9322 /* Sources */ = {
@@ -515,6 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2N64875GLV;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Space News/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -547,6 +597,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2N64875GLV;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Space News/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
