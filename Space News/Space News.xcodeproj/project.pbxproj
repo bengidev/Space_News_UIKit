@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		B633B1842B7207F900CC9322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1832B7207F900CC9322 /* AppDelegate.swift */; };
 		B633B1862B7207FA00CC9322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1852B7207FA00CC9322 /* SceneDelegate.swift */; };
-		B633B1882B7207FA00CC9322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1872B7207FA00CC9322 /* ViewController.swift */; };
 		B633B18E2B7207FA00CC9322 /* Space_News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B633B18C2B7207FA00CC9322 /* Space_News.xcdatamodeld */; };
 		B633B1902B7207FC00CC9322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B633B18F2B7207FC00CC9322 /* Assets.xcassets */; };
 		B633B1932B7207FC00CC9322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B633B1912B7207FC00CC9322 /* LaunchScreen.storyboard */; };
 		B633B19E2B7207FC00CC9322 /* Space_NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B19D2B7207FC00CC9322 /* Space_NewsTests.swift */; };
 		B633B1A82B7207FD00CC9322 /* Space_NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1A72B7207FD00CC9322 /* Space_NewsUITests.swift */; };
 		B633B1AA2B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1A92B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift */; };
+		B633B1BF2B720DA800CC9322 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1BE2B720DA800CC9322 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		B633B1802B7207F900CC9322 /* Space News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B633B1832B7207F900CC9322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B633B1852B7207FA00CC9322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B633B1872B7207FA00CC9322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B633B18D2B7207FA00CC9322 /* Space_News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Space_News.xcdatamodel; sourceTree = "<group>"; };
 		B633B18F2B7207FC00CC9322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B633B1922B7207FC00CC9322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		B633B1A32B7207FC00CC9322 /* Space NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space NewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B633B1A72B7207FD00CC9322 /* Space_NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_NewsUITests.swift; sourceTree = "<group>"; };
 		B633B1A92B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B633B1BE2B720DA800CC9322 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,10 @@
 		B633B1822B7207F900CC9322 /* Space News */ = {
 			isa = PBXGroup;
 			children = (
-				B633B1832B7207F900CC9322 /* AppDelegate.swift */,
-				B633B1852B7207FA00CC9322 /* SceneDelegate.swift */,
-				B633B1872B7207FA00CC9322 /* ViewController.swift */,
-				B633B18F2B7207FC00CC9322 /* Assets.xcassets */,
-				B633B1912B7207FC00CC9322 /* LaunchScreen.storyboard */,
-				B633B1942B7207FC00CC9322 /* Info.plist */,
-				B633B18C2B7207FA00CC9322 /* Space_News.xcdatamodeld */,
+				B633B1B62B720C6300CC9322 /* Application */,
+				B633B1B72B720CC100CC9322 /* Features */,
+				B633B1B92B720CD800CC9322 /* DataSources */,
+				B633B1B82B720CC700CC9322 /* Resources */,
 			);
 			path = "Space News";
 			sourceTree = "<group>";
@@ -125,6 +122,89 @@
 				B633B1A92B7207FD00CC9322 /* Space_NewsUITestsLaunchTests.swift */,
 			);
 			path = "Space NewsUITests";
+			sourceTree = "<group>";
+		};
+		B633B1B62B720C6300CC9322 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B633B1832B7207F900CC9322 /* AppDelegate.swift */,
+				B633B1852B7207FA00CC9322 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B633B1B72B720CC100CC9322 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B633B1BA2B720D1300CC9322 /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B633B1B82B720CC700CC9322 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B633B18F2B7207FC00CC9322 /* Assets.xcassets */,
+				B633B1912B7207FC00CC9322 /* LaunchScreen.storyboard */,
+				B633B1942B7207FC00CC9322 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B633B1B92B720CD800CC9322 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				B633B1C12B720DD700CC9322 /* API */,
+				B633B1C02B720DCB00CC9322 /* CoreData */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		B633B1BA2B720D1300CC9322 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B633B1BD2B720D7E00CC9322 /* Models */,
+				B633B1BC2B720D7800CC9322 /* ViewModels */,
+				B633B1BB2B720D2000CC9322 /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B633B1BB2B720D2000CC9322 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B633B1BE2B720DA800CC9322 /* OnboardingViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B633B1BC2B720D7800CC9322 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B633B1BD2B720D7E00CC9322 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B633B1C02B720DCB00CC9322 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B633B18C2B7207FA00CC9322 /* Space_News.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B633B1C12B720DD700CC9322 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B633B1882B7207FA00CC9322 /* ViewController.swift in Sources */,
 				B633B1842B7207F900CC9322 /* AppDelegate.swift in Sources */,
+				B633B1BF2B720DA800CC9322 /* OnboardingViewController.swift in Sources */,
 				B633B1862B7207FA00CC9322 /* SceneDelegate.swift in Sources */,
 				B633B18E2B7207FA00CC9322 /* Space_News.xcdatamodeld in Sources */,
 			);
@@ -436,7 +516,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2N64875GLV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Space News/Info.plist";
+				INFOPLIST_FILE = "Space News/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -468,7 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2N64875GLV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Space News/Info.plist";
+				INFOPLIST_FILE = "Space News/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
