@@ -1,43 +1,39 @@
-    //
-    //  OnboardingViewController.swift
-    //  Space News
-    //
-    //  Created by Bambang Tri Rahmat Doni on 06/02/24.
-    //
+//
+//  OnboardingViewController.swift
+//  Space News
+//
+//  Created by Bambang Tri Rahmat Doni on 06/02/24.
+//
 
 import UIKit
 
 final class OnboardingViewController: UIViewController {
 
-        // MARK: Initializers
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
+  // MARK: Initializers
 
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+  }
 
-        fatalError("init(coder:) has not been implemented")
-    }
+  @available(*, unavailable)
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
 
-    @available(*, unavailable)
-    override class func awakeFromNib() {
-        super.awakeFromNib()
+    fatalError("init(coder:) has not been implemented")
+  }
 
-        fatalError("awakeFromNib() has not been implemented")
-    }
+  @available(*, unavailable)
+  override class func awakeFromNib() {
+    super.awakeFromNib()
 
-        // MARK: Lifecycles
-    override func loadView() {
-        super.loadView()
+    fatalError("awakeFromNib() has not been implemented")
+  }
 
-        view.backgroundColor = .systemBlue
-    }
+  // MARK: Lifecycles
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func loadView() {
+    super.loadView()
 
-            // Do any additional setup after loading the view.
-    }
+    view.backgroundColor = .systemBlue
+  }
 }
