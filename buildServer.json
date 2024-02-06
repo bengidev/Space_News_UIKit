@@ -12,8 +12,8 @@
 	"argv": [
 		"/usr/local/bin/xcode-build-server"
 	],
-	"kind": "xcode",
 	"workspace": "/Users/beng/Documents/iOS App Developer/Space_News_UIKit/Space News/Space News.xcodeproj/project.xcworkspace",
 	"build_root": "/Users/beng/Library/Developer/Xcode/DerivedData/Space_News-gyomdwvkrcepnkgzazgxwajeoopf",
-	"scheme": "Space News"
+	"scheme": "Space News",
+	"kind": "xcode"
 }
