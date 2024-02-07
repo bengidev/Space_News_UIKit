@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B624F1442B7383C6006EEA16 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B624F1432B7383C6006EEA16 /* SnapKit */; };
+		B624F1462B7383C6006EEA16 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B624F1452B7383C6006EEA16 /* SnapKit-Dynamic */; };
 		B633B1842B7207F900CC9322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1832B7207F900CC9322 /* AppDelegate.swift */; };
 		B633B1862B7207FA00CC9322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633B1852B7207FA00CC9322 /* SceneDelegate.swift */; };
 		B633B18E2B7207FA00CC9322 /* Space_News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B633B18C2B7207FA00CC9322 /* Space_News.xcdatamodeld */; };
@@ -61,6 +63,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B633B1C92B722F0000CC9322 /* Inject in Frameworks */,
+				B624F1442B7383C6006EEA16 /* SnapKit in Frameworks */,
+				B624F1462B7383C6006EEA16 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +238,8 @@
 			name = "Space News";
 			packageProductDependencies = (
 				B633B1C82B722F0000CC9322 /* Inject */,
+				B624F1432B7383C6006EEA16 /* SnapKit */,
+				B624F1452B7383C6006EEA16 /* SnapKit-Dynamic */,
 			);
 			productName = "Space News";
 			productReference = B633B1802B7207F900CC9322 /* Space News.app */;
@@ -309,6 +315,7 @@
 			mainGroup = B633B1772B7207F900CC9322;
 			packageReferences = (
 				B633B1C72B722F0000CC9322 /* XCRemoteSwiftPackageReference "Inject" */,
+				B624F1422B7383C6006EEA16 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = B633B1812B7207F900CC9322 /* Products */;
 			projectDirPath = "";
@@ -774,6 +781,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B624F1422B7383C6006EEA16 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
 		B633B1C72B722F0000CC9322 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -785,6 +800,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B624F1432B7383C6006EEA16 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B624F1422B7383C6006EEA16 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B624F1452B7383C6006EEA16 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B624F1422B7383C6006EEA16 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 		B633B1C82B722F0000CC9322 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B633B1C72B722F0000CC9322 /* XCRemoteSwiftPackageReference "Inject" */;
