@@ -1,21 +1,7 @@
 Resolving Package Graph
 Resolved source packages
-SnapKit - https://github.com/SnapKit/SnapKit.git @ 5.7.0
 Inject - https://github.com/krzysztofzablocki/Inject.git @ 1.3.0
-Clean Succeeded
-[SnapKit_SnapKit] Copying PrivacyInfo.xcprivacy
-[SnapKit_SnapKit] Processing empty-SnapKit_SnapKit.plist
-Signing SnapKit_SnapKit.bundle (in target 'SnapKit_SnapKit' from project 'SnapKit')
-[SnapKit_SnapKit] Touching SnapKit_SnapKit.bundle
-[SnapKit] Processing empty-SnapKit.plist
-[SnapKit] Touching SnapKit.framework
-[SnapKit-Dynamic] Processing empty-SnapKit-Dynamic.plist
-Signing SnapKit-Dynamic.framework (in target 'SnapKit-Dynamic' from project 'SnapKit')
-[SnapKit-Dynamic] Touching SnapKit-Dynamic.framework
-[Space News] Copying .swiftformat
-[Space News] Compiling LaunchScreen.storyboard
-Signing SnapKit.framework (in target 'Space News' from project 'Space News')
-[Space News] Processing Info.plist
+SnapKit - https://github.com/SnapKit/SnapKit.git @ 5.7.0
 [Space News] Running script Swift Lint
 [!]  /Users/beng/Documents/iOS App Developer/Space_News_UIKit/Space News/Space NewsUITests/Space_NewsUITests.swift:22:12: Empty XCTest Method Violation: Empty XCTest method should be avoided (empty_xctest_method)
 /Users/beng/Documents/iOS App Developer/Space_News_UIKit/Space News/Space NewsTests/Space_NewsTests.swift:13:12: warning: Empty XCTest Method Violation: Empty XCTest method should be avoided (empty_xctest_method)
@@ -24,8 +10,6 @@ Signing SnapKit.framework (in target 'Space News' from project 'Space News')
 Done linting! Found 4 violations, 0 serious in 6 files.
 
 [Space News] Running script Swift Format
-Signing Space\ News.app (in target 'Space News' from project 'Space News')
-[Space News] Touching Space\ News.app
 Build Succeeded
 
 -----------------------------
